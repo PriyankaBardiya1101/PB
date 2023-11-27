@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+
+        
+        .abc{
+            display: grid;
+        
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-content: flex-start;
+            grid-template-rows:200px 200px 200px 200px;
+            grid-gap: 10px;
+        
+            
+            
+
+
+        }
+        .a{
+            background-color: tomato;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .b{
+            background-color: yellowgreen;
+
+
+        }
+        .c{
+            background-color: aqua;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .d{
+            background-color: brown;
+        }
+        .e{
+            background-color: teal;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .imag{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        body{
+            border: solid black;
+            height: 420px;
+            padding: 20px;
+        }
+        .im{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .bs{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .pk{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .ss{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="abc"> 
+        <div class="a"><img class="imag" src="images/watch.jpg" alt="">Functions. Customarily, watches provide the time of day, giving at least the hour and minute, and often the second. Many also provide the current date, and some (called "complete calendar" or "triple date" watches) display the day of the week and the month as well. </div>
+        <div class=" b"><img class="im" src="images/pinkflower.jpg" alt=""> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio voluptas expedita animi beatae. </div>
+        <div class=" c"><img class="bs" src="images/redflower.jpg" alt=""> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores numquam reprehenderit mollitia vitae illo quia perspiciatis. Sed ad voluptatum qui dolorem magni eius quasi, sequi, impedit facilis, necessitatibus tenetur fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo exercitationem quidem repellendus nihil quam, commodi nemo mollitia dolore assumenda natus velit facere temporibus quisquam possimus provident sequi a aspernatur.</div>
+        <div class=" d"><img class="pk" src="images/pexels-pixabay-247851.jpg" alt=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus perspiciatis pariatur consequuntur placeat maiores est saepe impedit.</div>
+        <div class=" e"><img class="ss" src="images/pexels-mateusz-dach-450035 (1).jpg" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nobis dolorem praesentium sapiente reprehenderit repudiandae, iste nostrum ratione ut molestiae accusantium perspiciatis reiciendis, omnis blanditiis doloribus quae nemo excepturi nulla dolorum pariatur deleniti autem obcaecati. Voluptate enim illum ullam!</div>
+    </div>
+    
+</body>
+</html>

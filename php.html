@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <style>
+        .sidebar{
+            border: 5px solid black;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            background-color: burlywood;
+        }
+        .main{
+            padding-left: 25%;
+            text-align: justify;
+            background-color: thistle;
+        
+        }
+        h1{
+            text-align: center;
+            color: teal;
+            
+            
+    
+        }
+        html ,body{
+            scroll-behavior: smooth;
+
+
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+    <div>
+
+
+    <div class="sidebar">
+        <ul><h3 style="color:rebeccapurple">Introduction To PHP<br></h3>
+        <a href="#PHP Introduction"><Li>Introduction</Li><br></a>
+    <a href="#PHP FullForm"><li>FullForm</li><br></a>
+<a href="#PHP Basic Syntax"><li>Basic Syntax</li><br></a>
+<a href="#PHP variables"><li>PHP Variables</li><br></a>
+<a href="#PHP Advantage"><li>PHP Advantage</li><br></a></ul></div>
+<div class="main">
+    <h1 >Introduction PHP</h1>
+    <h2>Introduction <br></h2>
+    <p class="p1" id="PHP Introduction">     The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a server-side scripting language designed specifically for web development. It is open-source which means it is free to download and use. It is very simple to learn and use. The files have the extension “.php”.Rasmus Lerdorf inspired the first version of PHP and participated in the later versions. It is an interpreted language and it does not require a compiler. <ul>
+        <li>PHP code is executed in the server.</li><br>
+           <li> It can be integrated with many databases such as Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Sybase, and Informix.</li><br>
+           <li> It is powerful to hold a content management system like WordPress and can be used to control user access.</li><br>
+           <li> It supports main protocols like HTTP Basic, HTTP Digest, IMAP, FTP, and others.</li><br>
+            <li>Websites like www.facebook.com and www.yahoo.com are also built on PHP.</li><br>
+    </ul></p>
+    <h2 class="h1" >PHP|Full Form </h2><p class="p2" id="PHP FullForm">Full form of PHP is Hypertext Preprocessor and earlier it was abbreviated as Personal Home Page. It is a general-purpose programming language used to design a website or web application. It is the server-side scripting language embedded with HTML to develop Static website, Dynamic website, or Web applications. It was created by Rasmus Lerdorf in 1994. The syntax of PHP is similar to C, C++, and Java. It manages the dynamic content, database, session, cookies, etc of a dynamic website. <br><br> <img src="images/php3.png" alt="" height="200px" width="400px"><br><br>The thing that differentiates PHP and HTML is, PHP codes are executed on the server whereas HTML codes are directly rendered on the browser. PHP codes are first executed on the server and then the result is returned to the browser. The only information that the client or browser knows is the result returned after executing the PHP script on the server and not the actual PHP codes present in the PHP file. Also, PHP files can support other client-side scripting languages like CSS and JavaScript.</p>
+    <h2 class="h2">Basic Syntax</h2>
+    <p class="p3" id="PHP Basic Syntax">The structure which defines PHP computer language is called PHP syntax.
+
+        The PHP script is executed on the server and the HTML result is sent to the browser. It can normally have HTML and PHP tags. PHP or Hypertext Preprocessor is a widely used open-source general-purpose scripting language and can be embedded with HTML. PHP files are saved with the “.php” extension. PHP scripts can be written anywhere in the document within PHP tags along with normal HTML. <br><li><b>Canonical PHP Tags: </b></li>The script starts with php and ends with ?>. These tags are also called ‘Canonical PHP tags’. Everything outside of a pair of opening and closing tags is ignored by the PHP parser. The open and closing tags are called delimiters. Every PHP command ends with a semi-colon (;). Let’s look at the hello world program in PHP. <li><b>Syntax:</b></li><br>  &#60; &#63; php
+        # Here echo command is used to print
+        echo "Hello, world!";
+        &#63; &#62;
+        
+    </p>
+    <h2 class="h3">PHP|Variables</h2><p class="p4" id="PHP variables">Variables in a program are used to store some values or data that can be used later in a program. The variables are also like containers that store character values, numeric values, memory addresses, and strings. PHP has its own way of declaring and storing variables. 
+        There are a few rules, that need to be followed and facts that need to be kept in mind while dealing with variables in PHP:  
+        
+        <li>Any variables declared in PHP must begin with a dollar sign ($), followed by the variable name.</li>
+        <li>A variable can have long descriptive names (like $factorial, $even_nos) or short names (like $n or $f or $x)</li>
+       <li>A variable name can only contain alphanumeric characters and underscores (i.e., ‘a-z’, ‘A-Z’, ‘0-9, and ‘_’) in their name. Even it cannot start with a number.</li>
+       <li> A constant is used as a variable for a simple value that cannot be changed. It is also case-sensitive.</li></p>
+       <h2 class="h4">Advantage <br></h2><p class="p5" id="PHP Advantage"><li>The most important advantage of PHP is that it’s open-source and free from cost. It can be downloaded anywhere and is readily available to use for events or web applications.</li> <br>
+       <li> It is platform-independent. PHP-based applications can run on any OS like UNIX, Linux, Windows, etc.</li> <br>
+        <li>Applications can easily be loaded which are based on PHP and connected to the database.</li><br><li> It’s mainly used due to its faster rate of loading over slow internet speed than other programming language.</li><br> 
+        <li>It has less learning curve because it is simple and straightforward to use. Someone familiar with C programming can easily work on PHP.</li> <br>
+        <li>It is more stable for a few years with the assistance of providing continuous support to various versions.</li></p>
+
+    
+
+</div>
+
+    </div>    
+</body>
+</html>
