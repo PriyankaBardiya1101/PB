@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="" id="sub_1" autofocus placeholder="DAA"><br>
+        <input type="text" name="" id="sub_2" placeholder="Web_computing"><br>
+        <input type="text" name="" id="sub_3" placeholder="AI"><br>
+        <input type="text" name="" id="sub_4" placeholder="Network_security"><br>
+        <input type="text" name="" id="sub_5" placeholder="Distributing_computing"><br>
+        <button type="button" onclick="grade()">Solve</button>
+    </form> 
+    <p id="ppb"></p>
+    <script>
+        function grade(){
+            let DAA=document.getElementById("sub_1").value;
+            let Web_computing=document.getElementById("sub_2").value;
+            let AI=document.getElementById("sub_3").value;
+            let Network_security=document.getElementById("sub_4").value;
+            let Distributing_computing=document.getElementById("sub_5").value;
+            DAA=Number.parseInt(DAA);
+            Web_computing=Number.parseInt(Web_computing);
+            AI=Number.parseInt(AI);
+            Network_security=Number.parseInt(Network_security);
+            Distributing_computing=Number.parseInt(Distributing_computing);
+            let total=DAA+Web_computing+AI+Network_security+Distributing_computing;
+            let Percentage=(total/500*100);
+            document.write('Total=',total,'<br>');
+            document.write('Per=',Percentage,'<br>');
+            console.log(total)
+            console.log(Percentage)
+
+            if(Percentage<100 && Percentage>=85){
+                document.write("Grade A");
+            }else if(Percentage<85 && Percentage>=70){
+                document.write("Grade B");
+            }else if(Percentage<70 && Percentage>=55){
+                document.write("Grade C");
+                
+            }else if(Percentage<55 && Percentage>=40){
+                document.write("Grade D");
+            }else if(Percentage<=35){
+                document.write("Fail");
+            }else{
+                document.write("not valid")
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

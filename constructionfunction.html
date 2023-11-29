@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConstructionFunction</title>
+</head>
+<body>
+    <script>
+        function Plants(name,size,example,base_price,GST){
+            this.PlantName=name,
+            this.PlantSize=size,
+            this.PlantExample=example,
+            this.bas = base_price,
+            this.gst = GST,
+            this.PlantPrice = function(){
+                let base = Number.parseInt(this.bas);
+                let gst = Number.parseInt(this.gst);
+
+                let total = (base /100) * gst;
+                 
+                console.log(total + base);
+              
+            };
+
+        
+        }
+        let herbs = new Plants('Herbs','small','tomato',200,10);
+        let shrubs = new Plants('Shrubs','big','cherry',300,10);
+        let creepers = new Plants('Creepers','fragil','watermwlon',400,50);
+
+        herbs.PlantPrice();
+        
+    </script>
+    
+</body>
+</html>
